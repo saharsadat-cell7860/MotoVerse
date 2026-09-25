@@ -20,7 +20,7 @@ body {
   width: 100%;
   z-index: 1000;
 
-  background: rgba(11, 15, 20, 0.85);
+  background: rgba(82, 41, 34, 0.35);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
 
