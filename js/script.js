@@ -1,19 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  /* ================================
-       1. NAVBAR SCROLL EFFECT
-    ================================= */
-
-  const navbar = document.querySelector(".navbar");
-
-  if (navbar) {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 50) {
-        navbar.classList.add("navbar-scrolled");
-      } else {
-        navbar.classList.remove("navbar-scrolled");
-      }
-    });
-  }
 
   /* ================================
        2. SMOOTH SCROLL
