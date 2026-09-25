@@ -428,3 +428,418 @@ footer {
     height: 36px;
   }
 }
+
+/* =========================
+   FEATURED MOTORCYCLES
+========================= */
+
+.featured-section {
+  position: relative;
+  padding: 120px 0;
+
+  background: linear-gradient(180deg, #0b0f14 0%, #0d1218 100%);
+}
+
+/* Section Heading */
+
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+
+  margin-bottom: 55px;
+}
+
+.section-subtitle {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #e63946;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.section-heading h2 {
+  margin: 0;
+
+  color: #f5f5f5;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.section-heading h2 span {
+  color: #e63946;
+}
+
+/* View All */
+
+.view-all-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #a8b0b8;
+  text-decoration: none;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.view-all-btn i {
+  transition: transform 0.3s ease;
+}
+
+.view-all-btn:hover {
+  color: #e63946;
+}
+
+.view-all-btn:hover i {
+  transform: translate(4px, -4px);
+}
+
+/* Motorcycle Card */
+
+.bike-card {
+  position: relative;
+  overflow: hidden;
+
+  height: 100%;
+
+  background: #151c24;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+
+  transition:
+    transform 0.45s ease,
+    border-color 0.45s ease,
+    box-shadow 0.45s ease;
+
+  animation: cardReveal 0.8s ease both;
+}
+
+/* Red top line */
+
+.bike-card::before {
+  content: "";
+
+  position: absolute;
+  z-index: 5;
+
+  top: 0;
+  left: 50%;
+
+  width: 0;
+  height: 2px;
+
+  background: #e63946;
+
+  transform: translateX(-50%);
+
+  transition: width 0.45s ease;
+}
+
+.bike-card:hover {
+  transform: translateY(-12px);
+
+  border-color: rgba(230, 57, 70, 0.35);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.4),
+    0 0 30px rgba(230, 57, 70, 0.06);
+}
+
+.bike-card:hover::before {
+  width: 70%;
+}
+
+/* Staggered Animation */
+
+.row .col-lg-4:nth-child(1) .bike-card {
+  animation-delay: 0.1s;
+}
+
+.row .col-lg-4:nth-child(2) .bike-card {
+  animation-delay: 0.25s;
+}
+
+.row .col-lg-4:nth-child(3) .bike-card {
+  animation-delay: 0.4s;
+}
+
+/* Bike Image */
+
+.bike-image {
+  position: relative;
+  overflow: hidden;
+
+  height: 270px;
+
+  background: #10161d;
+}
+
+.bike-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1),
+    filter 0.5s ease;
+}
+
+.bike-card:hover .bike-image img {
+  transform: scale(1.08);
+  filter: brightness(0.72);
+}
+
+/* Image Overlay */
+
+.bike-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    180deg,
+    transparent 35%,
+    rgba(5, 8, 11, 0.85) 100%
+  );
+
+  opacity: 0;
+
+  transition: opacity 0.45s ease;
+}
+
+.bike-card:hover .bike-overlay {
+  opacity: 1;
+}
+
+/* Badge */
+
+.bike-badge {
+  position: absolute;
+  z-index: 3;
+
+  top: 18px;
+  left: 18px;
+
+  padding: 6px 11px;
+
+  color: #ffffff;
+  background: #e63946;
+
+  border-radius: 5px;
+
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* View Details */
+
+.bike-view-btn {
+  position: absolute;
+  z-index: 4;
+
+  left: 50%;
+  bottom: 25px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 16px;
+
+  color: #ffffff;
+  background: #e63946;
+
+  border-radius: 6px;
+
+  text-decoration: none;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  opacity: 0;
+
+  transform: translate(-50%, 20px);
+
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease,
+    background 0.3s ease;
+}
+
+.bike-card:hover .bike-view-btn {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.bike-view-btn:hover {
+  color: #ffffff;
+  background: #c92f3b;
+}
+
+/* Card Content */
+
+.bike-content {
+  padding: 26px;
+}
+
+.bike-category {
+  margin-bottom: 8px;
+
+  color: #e63946;
+
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.bike-content h3 {
+  margin-bottom: 10px;
+
+  color: #f5f5f5;
+
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.bike-content p {
+  min-height: 50px;
+  margin-bottom: 25px;
+
+  color: #7f8994;
+
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+/* Price */
+
+.bike-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 18px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.bike-bottom small {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #6f7882;
+  font-size: 0.68rem;
+}
+
+.bike-bottom strong {
+  color: #f5f5f5;
+  font-size: 1.15rem;
+}
+
+/* Arrow */
+
+.bike-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  color: #f5f5f5;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+
+  transition:
+    background 0.35s ease,
+    color 0.35s ease,
+    transform 0.35s ease;
+}
+
+.bike-card:hover .bike-arrow {
+  color: #ffffff;
+  background: #e63946;
+  border-color: #e63946;
+
+  transform: rotate(45deg);
+}
+
+/* =========================
+   CARD ANIMATION
+========================= */
+
+@keyframes cardReveal {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+  .featured-section {
+    padding: 90px 0;
+  }
+
+  .section-heading {
+    align-items: start;
+    gap: 25px;
+  }
+
+  .bike-image {
+    height: 250px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-heading {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .section-heading h2 {
+    font-size: 2.5rem;
+  }
+
+  .bike-card {
+    max-width: 500px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .featured-section {
+    padding: 70px 0;
+  }
+
+  .section-heading h2 {
+    font-size: 2.2rem;
+  }
+
+  .bike-image {
+    height: 230px;
+  }
+
+  .bike-content {
+    padding: 22px;
+  }
+}
