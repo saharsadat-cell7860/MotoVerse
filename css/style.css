@@ -244,7 +244,7 @@ footer {
   width: 100%;
   max-width: 650px;
 
-  animation: motorcycleFloat 5s ease-in-out infinite;
+  animation: motorcycleFloat 3s ease-in-out infinite;
 }
 
 .hero-bike {
@@ -294,7 +294,7 @@ footer {
 
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
 
-  animation: floatingCard 4s ease-in-out infinite;
+  animation: floatingCard 3s ease-in-out infinite;
 }
 
 .floating-icon {
