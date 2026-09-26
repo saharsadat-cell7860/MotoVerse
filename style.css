@@ -92,14 +92,14 @@
 .about-title span {
   color: #e63946;
 }
-.section-tag span{
-  color: #e63946;
-}
+
 .about-text {
   color: #a8b0b8;
   line-height: 1.9;
 }
-
+.section-tag{
+  color: #e63946;
+}
 .about-btn {
   margin-top: 15px;
   padding: 12px 22px;
@@ -158,7 +158,7 @@
 
 .values-section {
   padding: 90px 0;
-  background: #0b0f14;
+  background: #37404a;
   color:#f5f5f5;
 }
 
