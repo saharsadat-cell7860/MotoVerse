@@ -1,10 +1,14 @@
-/* =========================
+/* 
    ABOUT PAGE
-========================= */
+*/
 
 .about-intro {
   padding: 90px 0;
   background: #0b0f14;
+}
+.page-hero{
+  background-color: #10161d;
+  color:#f5f5f5
 }
 
 /* About Image */
@@ -110,14 +114,14 @@
 
 .about-stats {
   padding: 70px 0;
-  background: #10161d;
+  background: #0a1521;
 }
 
 .stat-card {
   text-align: center;
   padding: 25px 15px;
 
-  background: rgba(21, 28, 36, 0.7);
+  background: rgba(23, 28, 32, 0.7);
   border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: 16px;
 
@@ -146,13 +150,14 @@
   font-size: 0.9rem;
 }
 
-/* =========================
+/*
    VALUES
-========================= */
+ */
 
 .values-section {
   padding: 90px 0;
-  background: #0b0f14;
+  background: #3a3434;
+  color: #f1eeee;
 }
 
 .value-card {
@@ -221,6 +226,10 @@
   margin: 0;
 }
 
+.test-ride-section{
+  background-color: #10161d;
+  color: #f5f5f5;
+}
 /* =========================
    RESPONSIVE
 ========================= */
