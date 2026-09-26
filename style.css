@@ -1,5 +1,5 @@
 /* =========================
-   ABOUT PAGE
+   ABOUT PAGE Mustaha
 ========================= */
 
 .about-intro {
@@ -92,7 +92,9 @@
 .about-title span {
   color: #e63946;
 }
-
+.section-tag span{
+  color: #e63946;
+}
 .about-text {
   color: #a8b0b8;
   line-height: 1.9;
@@ -157,7 +159,7 @@
 .values-section {
   padding: 90px 0;
   background: #0b0f14;
-  color:#f5f5f5
+  color:#f5f5f5;
 }
 
 .value-card {
