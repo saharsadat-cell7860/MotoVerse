@@ -111,9 +111,9 @@
   transform: translateY(-3px);
 }
 
-/* =========================
+/* 
    ABOUT STATS
-========================= */
+= */
 
 .about-stats {
   padding: 70px 0;
@@ -213,7 +213,7 @@
 }
 
 .value-card:hover > i {
-  background: #e63946;
+  background: #ed3847;
   color: #fff;
   transform: scale(1.1);
 }
