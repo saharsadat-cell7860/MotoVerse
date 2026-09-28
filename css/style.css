@@ -1083,6 +1083,222 @@ footer {
   opacity: 1;
 }
 
+/*===================================== sahar.sh ===>motorcycles===================================== */
+
+
+
+.page-hero {
+  padding: 100px 0 70px;
+  background: radial-gradient(
+    circle at center,
+    rgba(230, 57, 70, 0.12),
+    transparent 55%
+  );
+}
+
+.page-hero h1 {
+  color: #f5f5f5;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  margin: 10px 0 15px;
+}
+
+.page-hero h1 span {
+  color: #e63946;
+}
+
+.page-hero p {
+  max-width: 650px;
+  margin: auto;
+  color: #a8b0b8;
+  line-height: 1.8;
+}
+
+/* =========================
+   FILTER BUTTONS
+
+.motorcycle-filter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 50px;
+}
+
+.filter-btn {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #151c24;
+  color: #a8b0b8;
+  padding: 10px 22px;
+  border-radius: 30px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: #e63946;
+  color: #fff;
+  border-color: #e63946;
+  transform: translateY(-2px);
+}
+
+
+.motorcycles-section {
+  background: #0b0f14;
+}
+
+.bike-card {
+  height: 100%;
+  overflow: hidden;
+  background: #151c24;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  transition: 0.4s ease;
+}
+
+.bike-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(230, 57, 70, 0.45);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.bike-image {
+  height: 270px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bike-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.6s ease;
+}
+
+.bike-card:hover .bike-image img {
+  transform: scale(1.08);
+}
+
+/* Dark overlay */
+
+.bike-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.55);
+
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.bike-card:hover .bike-overlay {
+  opacity: 1;
+}
+
+/* Badge */
+
+.bike-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 2;
+
+  padding: 6px 12px;
+  border-radius: 20px;
+
+  background: #e63946;
+  color: #fff;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* View button */
+
+.view-bike-btn {
+  padding: 11px 20px;
+  border-radius: 30px;
+
+  background: #e63946;
+  color: #fff;
+
+  text-decoration: none;
+  font-size: 0.9rem;
+
+  transform: translateY(15px);
+  transition: 0.4s ease;
+}
+
+.bike-card:hover .view-bike-btn {
+  transform: translateY(0);
+}
+
+.view-bike-btn i {
+  margin-left: 6px;
+}
+
+/* Card content */
+
+.bike-content {
+  padding: 25px;
+}
+
+.bike-category {
+  color: #e63946;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.bike-content h3 {
+  color: #f5f5f5;
+  font-size: 1.4rem;
+  margin: 8px 0;
+}
+
+.bike-content p {
+  color: #a8b0b8;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.bike-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bike-bottom strong {
+  color: #f5f5f5;
+  font-size: 1.2rem;
+}
+
+.bike-bottom a {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: rgba(230, 57, 70, 0.1);
+  color: #e63946;
+
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.bike-bottom a:hover {
+  background: #e63946;
+  color: #fff;
+  transform: rotate(45deg);
 .category-card:hover .category-number {
   color: #e63946;
 
@@ -1107,9 +1323,6 @@ footer {
   color: #e63946;
 }
 
-/* =========================
-   CATEGORY ENTRANCE
-========================= */
 
 .categories-grid .col-lg-6 {
   animation: categoryReveal 0.8s ease both;
@@ -1143,9 +1356,7 @@ footer {
   }
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+
 
 @media (max-width: 991px) {
   .categories-section {
@@ -1207,9 +1418,7 @@ footer {
     font-size: 0.82rem;
   }
 }
-/* =========================
-   WHY CHOOSE US
-========================= */
+
 
 .why-us-section {
   background: #0b0f14;
@@ -1309,7 +1518,7 @@ footer {
 
 /* =========================
    TEST RIDE CTA
-========================= */
+==================*/
 
 .test-ride-section {
   padding: 80px 0;
@@ -1372,6 +1581,32 @@ footer {
 ========================= */
 
 @media (max-width: 768px) {
+  .page-hero {
+    padding: 70px 0 50px;
+  }
+
+  .page-hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .motorcycle-filter {
+    margin-bottom: 35px;
+  }
+
+  .filter-btn {
+    padding: 8px 17px;
+    font-size: 0.85rem;
+  }
+
+  .bike-image {
+    height: 240px;
+  }
+
+  .test-ride-content {
+    padding: 30px 22px;
+  }
+}
+
   .section-heading h2 {
     font-size: 2rem;
   }
