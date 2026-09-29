@@ -2492,3 +2492,293 @@ footer {
         padding: 13px 16px;
     }
 }
+/* =========================
+   ABOUT INTRO
+========================= */
+
+.about-intro {
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.about-intro .row {
+    align-items: center;
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.about-image {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    min-height: 420px;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+}
+
+/* Floating card */
+
+.about-image-card {
+    position: absolute;
+    right: -25px;
+    bottom: 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 16px 22px;
+    min-width: 190px;
+
+    background: rgba(20, 20, 20, 0.88);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+.about-image-card i {
+    font-size: 28px;
+    color: #dc3545;
+}
+
+.about-image-card strong,
+.about-image-card span {
+    display: block;
+}
+
+.about-image-card strong {
+    font-size: 15px;
+    color: #fff;
+}
+
+.about-image-card span {
+    font-size: 13px;
+    color: #aaa;
+    margin-top: 3px;
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+.about-title {
+    font-size: clamp(36px, 4vw, 58px);
+    line-height: 1.1;
+    margin: 15px 0 25px;
+}
+
+.about-title span {
+    color: #dc3545;
+}
+
+.about-text {
+    max-width: 580px;
+    color: #aaa;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.about-btn {
+    margin-top: 10px;
+    padding: 13px 24px;
+    border-radius: 8px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 991.98px) {
+
+    .about-intro {
+        padding: 80px 0;
+    }
+
+    .about-intro .row {
+        --bs-gutter-y: 60px;
+    }
+
+    .about-image {
+        max-width: 700px;
+    }
+
+    .about-image img {
+        min-height: 400px;
+    }
+
+    .about-image-card {
+        right: 20px;
+        bottom: 25px;
+    }
+
+    .about-title {
+        font-size: 44px;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+}
+
+
+/* =========================
+   SMALL TABLET
+========================= */
+
+@media (max-width: 767.98px) {
+
+    .about-intro {
+        padding: 65px 0;
+    }
+
+    .about-intro .row {
+        --bs-gutter-y: 45px;
+    }
+
+    .about-image {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .about-image img {
+        width: 100%;
+        min-height: 350px;
+        max-height: 450px;
+        object-fit: cover;
+    }
+
+    .about-image-card {
+        right: 15px;
+        bottom: 15px;
+
+        min-width: auto;
+        padding: 12px 16px;
+    }
+
+    .about-image-card i {
+        font-size: 23px;
+    }
+
+    .about-image-card strong {
+        font-size: 14px;
+    }
+
+    .about-image-card span {
+        font-size: 12px;
+    }
+
+    .about-title {
+        font-size: 38px;
+    }
+
+    .about-text {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 575.98px) {
+
+    .about-intro {
+        padding: 55px 0;
+    }
+
+    .about-intro .container {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .about-image img {
+        min-height: 280px;
+        max-height: 350px;
+        border-radius: 15px;
+    }
+
+    .about-image-card {
+        right: 10px;
+        bottom: 10px;
+
+        padding: 10px 13px;
+        gap: 8px;
+
+        border-radius: 10px;
+    }
+
+    .about-image-card i {
+        font-size: 20px;
+    }
+
+    .about-image-card strong {
+        font-size: 12px;
+    }
+
+    .about-image-card span {
+        font-size: 10px;
+    }
+
+    .section-tag {
+        font-size: 12px;
+    }
+
+    .about-title {
+        font-size: 32px;
+        margin-top: 12px;
+        margin-bottom: 20px;
+    }
+
+    .about-text {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .about-btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px 18px;
+    }
+}
+
+
+/* =========================
+   VERY SMALL MOBILE
+========================= */
+
+@media (max-width: 380px) {
+
+    .about-title {
+        font-size: 29px;
+    }
+
+    .about-image img {
+        min-height: 250px;
+    }
+
+    .about-image-card {
+        padding: 8px 10px;
+    }
+
+    .about-image-card i {
+        font-size: 18px;
+    }
+}
