@@ -739,11 +739,26 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+/* ================================asma ========> contact ================================ */
+
+/* =========================
+   CONTACT PAGE
+========================= */
+.contact-section {
+  padding: 90px 0;
+  background: #0b0f14;
+}
+
+/* Contact Text */
+
+.contact-title {
+  color: #f5f5f5;
+  font-size: 2.8rem;
 /*================================================= maryam =====> details ================================================= */
 
 /* =========================
    DETAILS PAGE
-===========================*/
+  ========================= */
 .details-section {
   padding: 100px 0 80px;
   background: radial-gradient(
@@ -808,6 +823,20 @@ footer {
   margin: 10px 0 20px;
 }
 
+.contact-title span {
+  color: #e63946;
+}
+
+.contact-description {
+  color: #a8b0b8;
+  line-height: 1.8;
+  margin-bottom: 35px;
+  max-width: 480px;
+}
+
+/* Contact Information */
+
+.contact-info {
 .details-title span {
   color: #e63946;
 }
@@ -839,6 +868,143 @@ footer {
   align-items: center;
   gap: 15px;
 
+  margin-bottom: 22px;
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: rgba(230, 57, 70, 0.1);
+  border: 1px solid rgba(230, 57, 70, 0.2);
+
+  color: #e63946;
+  font-size: 1.2rem;
+
+  transition: 0.3s ease;
+}
+
+.contact-info:hover .contact-icon {
+  background: #e63946;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.contact-info span,
+.contact-info strong {
+  display: block;
+}
+
+.contact-info span {
+  color: #a8b0b8;
+  font-size: 0.75rem;
+  margin-bottom: 4px;
+}
+
+.contact-info strong {
+  color: #f5f5f5;
+  font-size: 0.9rem;
+}
+
+/* =========================
+   CONTACT FORM
+========================= */
+.contact-form-card {
+  padding: 40px;
+
+  background: rgba(21, 28, 36, 0.75);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 22px;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.contact-form-card h3 {
+  color: #f5f5f5;
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+.contact-form-card > p {
+  color: #a8b0b8;
+  margin-bottom: 30px;
+}
+
+/* Labels */
+
+.form-label {
+  color: #dce1e5;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+/* Inputs */
+
+.contact-form-card .form-control,
+.contact-form-card .form-select {
+  min-height: 50px;
+
+  background: #0b0f14;
+  color: #f5f5f5;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+
+  padding: 12px 15px;
+
+  transition: 0.3s ease;
+}
+
+.contact-form-card textarea.form-control {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.contact-form-card .form-control::placeholder {
+  color: #69737d;
+}
+
+.contact-form-card .form-control:focus,
+.contact-form-card .form-select:focus {
+  background: #0b0f14;
+  color: #f5f5f5;
+
+  border-color: #e63946;
+
+  box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.12);
+}
+
+/* Select */
+
+.contact-form-card .form-select {
+  color: #a8b0b8;
+}
+
+/* Submit */
+
+.contact-submit {
+  width: 100%;
+  min-height: 50px;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.contact-submit:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(230, 57, 70, 0.25);
+}
+
+.contact-submit i {
   padding: 18px;
 
   background: rgba(21, 28, 36, 0.8);
@@ -889,7 +1055,7 @@ footer {
 
 /* =========================
    PERFORMANCE
-============================*/
+  ========================= */
 .performance-section {
   padding: 90px 0;
   background: #10161d;
@@ -986,7 +1152,7 @@ footer {
 
 /* =========================
    CARD ANIMATION
-============================*/
+  ========================= */
 @keyframes cardReveal {
   from {
     opacity: 0;
@@ -1001,7 +1167,7 @@ footer {
 
 /* =========================
    RESPONSIVE
-============================*/
+  ========================= */
 @media (max-width: 991px) {
   .featured-section {
     padding: 90px 0;
@@ -1052,7 +1218,7 @@ footer {
 }
 /* =========================
    CATEGORIES SECTION
-============================*/
+  ========================= */
 .categories-section {
   position: relative;
 
@@ -1257,7 +1423,7 @@ footer {
 
 /* =========================
    CATEGORY HOVER
-============================*/
+  ========================= */
 .category-card:hover {
   color: #ffffff;
 }
@@ -1314,7 +1480,7 @@ footer {
 
 /* =========================
    FILTER BUTTONS
-============================*/
+  ========================= */
 .motorcycle-filter {
   display: flex;
   justify-content: center;
@@ -1717,7 +1883,7 @@ footer {
 
 /* =========================
    RESPONSIVE
-============================*/
+  ========================= */
 @media (max-width: 992px) {
   .details-section {
     padding: 70px 0;
@@ -1807,13 +1973,40 @@ footer {
   transition: 0.3s ease;
 }
 
+.contact-submit:hover i {
+  transform: translateX(4px);
 .test-ride-btn:hover i {
   transform: translateX(5px);
 }
 
 /* =========================
    RESPONSIVE
-============================*/
+  ========================= */
+
+@media (max-width: 992px) {
+  .contact-section {
+    padding: 70px 0;
+  }
+
+  .contact-title {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-title {
+    font-size: 2.1rem;
+  }
+
+  .contact-form-card {
+    padding: 25px 20px;
+  }
+
+  .contact-info strong {
+    font-size: 0.82rem;
+  }
+}
+
 @media (max-width: 768px) {
   .page-hero {
     padding: 70px 0 50px;
